@@ -1,3 +1,4 @@
+const startTime = Date.now()
 const output = [];
 
 for (let n = 0; n < 1000; n++) {
@@ -5,3 +6,5 @@ for (let n = 0; n < 1000; n++) {
 }
 
 console.log(output.reduce((accum, current) => accum + current));
+const endTime = Date.now()
+console.log((endTime - startTime), " ms")

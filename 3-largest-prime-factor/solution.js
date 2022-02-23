@@ -1,3 +1,4 @@
+let startTime = Date.now()
 let number = 600851475143;
 const factors = []
 let finished = false
@@ -19,3 +20,5 @@ while(!finished) {
 }
 
 console.log(factors.sort((a,b) => a - b)[factors.length - 1])
+let endTime = Date.now()
+console.log((endTime - startTime), " ms")

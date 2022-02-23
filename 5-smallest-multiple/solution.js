@@ -1,3 +1,4 @@
+const startTime = Date.now()
 let finished = false
 let i = 1
 
@@ -13,3 +14,6 @@ while(!finished) {
     }
     i++
 }
+
+const endTime = Date.now()
+console.log((endTime - startTime) / 1000, " s")

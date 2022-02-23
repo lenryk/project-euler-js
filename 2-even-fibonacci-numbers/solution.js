@@ -1,3 +1,5 @@
+const startTime = Date.now()
+
 function calcFibs(maxLimit) {
   let fibs = [0, 1];
   while (fibs[fibs.length - 1] < maxLimit) {
@@ -14,3 +16,5 @@ function calcFibs(maxLimit) {
 }
 
 console.log(calcFibs(4_000_000));
+const endTime = Date.now()
+console.log((endTime - startTime), " ms")

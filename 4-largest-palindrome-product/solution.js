@@ -1,3 +1,4 @@
+const startTime = Date.now()
 const palindromes = []
 
 for(let n = 100; n < 1000; n++) {
@@ -10,3 +11,5 @@ for(let n = 100; n < 1000; n++) {
 }
 
 console.log(palindromes.sort().reverse()[1])
+const endTime = Date.now()
+console.log((endTime - startTime), " ms")

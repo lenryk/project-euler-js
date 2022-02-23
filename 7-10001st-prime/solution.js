@@ -1,3 +1,5 @@
+const startTime = Date.now()
+
 function findNPrimeNumber(n) {
     let counter = 2
     let number = 3
@@ -25,3 +27,5 @@ function checkPrime(number) {
 }
 
 console.log(findNPrimeNumber(10_001))
+const endTime = Date.now()
+console.log((endTime - startTime) / 1000, " s")

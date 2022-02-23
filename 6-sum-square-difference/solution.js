@@ -1,3 +1,4 @@
+const startTime = Date.now()
 const naturalNumbers = 100
 const naturalNumbersArr = []
 let squareSum = 0
@@ -12,3 +13,5 @@ for (let n = 0; n < naturalNumbers + 1; n++) {
 }
 
 console.log((squareSum ** 2) - naturalNumbersSum)
+const endTime = Date.now()
+console.log((endTime - startTime), " ms")
